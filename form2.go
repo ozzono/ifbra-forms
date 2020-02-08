@@ -165,7 +165,6 @@ func Form2()[]Funcao{
 		musculo,
 		pele,		
 	}
-	fmt.Printf("output:\n%#v",output)
 	return output
 }
 
