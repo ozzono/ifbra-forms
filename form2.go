@@ -1,9 +1,5 @@
 package form
 
-import(
-	"fmt"
-)
-
 var count int
 
 // Funcao defines the basic structure coletions of functions
