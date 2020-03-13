@@ -9,13 +9,15 @@ type Funcao struct{
 	SubFuncao []subfuncao
 }
 
+type Funcoes []Funcao
+
 type subfuncao struct{
 	Tipo string
 	Detalhe string
 }
 
 // Form2 defines and populates the collections of Functions
-func Form2()[]Funcao{
+func Form2()Funcoes{
 	mentais:=Funcao{
 		autoID(),
 		"Funções Mentais",
@@ -151,7 +153,7 @@ func Form2()[]Funcao{
 			},
 		},
 	}
-	output:= []Funcao{
+	output:= Funcoes{
 		mentais,
 		sensoriais,
 		vozfala,
