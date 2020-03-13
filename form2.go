@@ -10,7 +10,7 @@ type Funcao struct{
 }
 
 type Funcoes struct{
-	[]Funcao `json:"Funcao"`
+	Funcao []Funcao
 }
 
 type subfuncao struct{
@@ -155,7 +155,7 @@ func Form2()Funcoes{
 			},
 		},
 	}
-	output:= Funcoes{
+	output:= Funcoes.Funcao{
 		mentais,
 		sensoriais,
 		vozfala,
