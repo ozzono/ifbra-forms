@@ -155,15 +155,17 @@ func Form2()Funcoes{
 			},
 		},
 	}
-	output:= Funcoes.Funcao{
-		mentais,
-		sensoriais,
-		vozfala,
-		sangues,
-		digestivo,
-		idosos,
-		musculo,
-		pele,		
+	output:= Funcoes{
+		Funcao{
+			mentais,
+			sensoriais,
+			vozfala,
+			sangues,
+			digestivo,
+			idosos,
+			musculo,
+			pele,
+		},		
 	}
 	return output
 }
