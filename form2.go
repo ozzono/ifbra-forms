@@ -156,7 +156,7 @@ func Form2()Funcoes{
 		},
 	}
 	output:= Funcoes{
-		Funcao{
+		[]Funcao{
 			mentais,
 			sensoriais,
 			vozfala,
