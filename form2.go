@@ -9,7 +9,7 @@ type Funcao struct{
 	SubFuncao []subfuncao
 }
 
-type Funcoes []Funcao
+type Funcoes []Funcao `json:"Funcao"`
 
 type subfuncao struct{
 	Tipo string
