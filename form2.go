@@ -1,27 +1,23 @@
 package form
 
-var count int
-
 // Funcao defines the basic structure coletions of functions
-type Funcao struct{
-	ID int
-	Tipo string
+type Funcao struct {
+	Tipo      string
 	SubFuncao []subfuncao
 }
 
-type Funcoes struct{
+type Funcoes struct {
 	Funcao []Funcao
 }
 
-type subfuncao struct{
-	Tipo string
+type subfuncao struct {
+	Tipo    string
 	Detalhe string
 }
 
 // Form2 defines and populates the collections of Functions
-func Form2()Funcoes{
-	mentais:=Funcao{
-		autoID(),
+func Form2() Funcoes {
+	mentais := Funcao{
 		"Funções Mentais",
 		[]subfuncao{
 			subfuncao{
@@ -35,8 +31,7 @@ func Form2()Funcoes{
 		},
 	}
 
-	sensoriais:=Funcao{
-		autoID(),
+	sensoriais := Funcao{
 		"Funções Sensoriais e Dor",
 		[]subfuncao{
 			subfuncao{
@@ -62,8 +57,7 @@ func Form2()Funcoes{
 		},
 	}
 
-	vozfala:=Funcao{
-		autoID(),
+	vozfala := Funcao{
 		"Funções da Voz e da Fala",
 		[]subfuncao{
 			subfuncao{
@@ -73,8 +67,7 @@ func Form2()Funcoes{
 		},
 	}
 
-	sangues:=Funcao{
-		autoID(),
+	sangues := Funcao{
 		"Funções dos Sistemas Cardiovasculares, Hematológico, Imunológico e Respiratório",
 		[]subfuncao{
 			subfuncao{
@@ -96,8 +89,7 @@ func Form2()Funcoes{
 		},
 	}
 
-	digestivo:=Funcao{
-		autoID(),
+	digestivo := Funcao{
 		"Funções dos Sistemas Digestivo, Metabólico e Endócrino",
 		[]subfuncao{
 			subfuncao{
@@ -111,42 +103,39 @@ func Form2()Funcoes{
 		},
 	}
 
-	idosos:=Funcao{
-		autoID(),
+	idosos := Funcao{
 		"Funções Genitourinárias e Reprodutivas",
 		[]subfuncao{
 			subfuncao{
 				"Funções Urinárias",
 				"Funções de filtragem, coleta e excreção de urina.",
-			},	
+			},
 			subfuncao{
 				"Funções Genitais e Reprodutivas",
 				"Funções mentais e físicas/motoras relacionadas ao ato sexual, da menstruação e da procriação.",
 			},
 		},
 	}
-		
-	musculo:=Funcao{
-		autoID(),
+
+	musculo := Funcao{
 		"Funções Neuromusculoesqueléticas e relacionadas a Movimento",
 		[]subfuncao{
 			subfuncao{
 				"Funções das Articulações e dos Ossos",
 				"Mobilidade, estabilidade das articulações e ossos.",
-				},
-				subfuncao{
-					"Funções Musculares",
-					"Força, tônus e resistência muscular.",
-				},
-				subfuncao{
-					"Funções dos Movimentos",
-					"Reflexo motor, movimentos involuntários, controle dos movimentos voluntários, padrão da marcha, sensações relacionadas aos músculos e funções do movimento.",
-				},
+			},
+			subfuncao{
+				"Funções Musculares",
+				"Força, tônus e resistência muscular.",
+			},
+			subfuncao{
+				"Funções dos Movimentos",
+				"Reflexo motor, movimentos involuntários, controle dos movimentos voluntários, padrão da marcha, sensações relacionadas aos músculos e funções do movimento.",
+			},
 		},
 	}
-	
-	pele:=Funcao{
-		autoID(),
+
+	pele := Funcao{
 		"Funções de Pele e Estruturas Relacionadas",
 		[]subfuncao{
 			subfuncao{
@@ -155,7 +144,7 @@ func Form2()Funcoes{
 			},
 		},
 	}
-	output:= Funcoes{
+	output := Funcoes{
 		[]Funcao{
 			mentais,
 			sensoriais,
@@ -165,13 +154,7 @@ func Form2()Funcoes{
 			idosos,
 			musculo,
 			pele,
-		},		
+		},
 	}
 	return output
 }
-
-func autoID()int{
-	count++
-	return count
-}
-
